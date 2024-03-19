@@ -1,25 +1,25 @@
 {% extends "students/base.html" %}
 
 {% block body %}
-<h3 class="text-center m-4">Update Student</h3>
+<h3 class="text-center m-4">بروز رسانی دانش آموز</h3>
 {% if success %}
 <div class="alert alert-success" role="alert">
-    The student updated successfully.
-    <a href="{% url 'index' %}" class="alert-link">Go to Home Page.</a>
+    بروز رسانی دانش آموز موفقیت آمیز بود
+    <a href="{% url 'index' %}" class="alert-link">رفتن به صفحه اصلی.</a>
 </div>
 {% else %}
 <div class="row justify-content-center">
     <div class="col-6">
         <div class="card bg-light mb-3">
             <div class="card-header">
-                <i class="fa-solid fa-pen-to-square fa-lg"></i> Update Student Records
+                <i class="fa-solid fa-pen-to-square fa-lg"></i> به روز رسانی سوابق دانش آموزان
             </div>
             <div class="card-body">
                 <form action="" method="POST">
                     {% csrf_token %}
                     {{ form.as_p }}
-                    <button type="submit" class="btn btn-primary">Update</button>
-                    <a href="{% url 'index' %}" class="btn btn-secondary">Cancel</a>
+                    <button type="submit" class="btn btn-primary">بروز رسانی</button>
+                    <a href="{% url 'index' %}" class="btn btn-secondary">لغو</a>
                 </form>
             </div>
         </div>
