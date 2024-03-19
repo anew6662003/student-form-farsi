@@ -9,10 +9,10 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'index' %}">
-                <i class="fa-solid fa-graduation-cap fa-lg"></i> Student Management System
+                <i class="fa-solid fa-graduation-cap fa-lg"></i> سیستم مدیریت دانش آموزی
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
                 aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,12 +22,12 @@
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'index' %}">
-                            <i class="fa-solid fa-list fa-lg"></i> All Students
+                            <i class="fa-solid fa-list fa-lg"></i> تمام دانش آموزان
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'add' %}">
-                            <i class="fa-solid fa-plus fa-lg"></i> Add Student
+                            <i class="fa-solid fa-plus fa-lg"></i> اضافه کردن دانش آموز
                         </a>
                     </li>
                 </ul>

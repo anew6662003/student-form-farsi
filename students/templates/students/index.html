@@ -7,7 +7,7 @@
         {% if students %}
         <div class="card bg-light ms-4 me-4 mb-4">
             <div class="card-header">
-                <i class="fa-solid fa-list fa-lg"></i> Student Records
+                <i class="fa-solid fa-list fa-lg"></i> سوابق دانشجویی
             </div>
             <div class="card-body">
                 <p class="card-text">
@@ -68,7 +68,7 @@
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-primary"
-                                                        data-bs-dismiss="modal">Close</button>
+                                                        data-bs-dismiss="modal">بستن</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -98,7 +98,7 @@
                                                     </button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <p>Are you sure you want to delete this student?</p>
+                                                    <p>آیا مطمئن هستید برای حذف این اسم؟</p>
                                                 </div>
                                                 <div class="modal-footer">
                                                     <form action="{% url 'delete' student.id %}" method="POST">
@@ -106,7 +106,7 @@
                                                         <input type="submit" class="btn btn-primary" value="Delete">
                                                     </form>
                                                     <button type="button" class="btn btn-secondary"
-                                                        data-bs-dismiss="modal">Cancel</button>
+                                                        data-bs-dismiss="modal">لغو</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -121,7 +121,7 @@
             </div>
         </div>
         {% else %}
-        <h5 class="alert alert-primary ms-4 me-4">No Student Records</h5>
+        <h5 class="alert alert-primary ms-4 me-4">بدون سوابق دانشجویی</h5>
         {% endif %}
     </div>
 </div>
